@@ -14,8 +14,8 @@ notsame() {
 	git push origin HEAD
 	cd ~/make-update
 	git remote add m https://github.com/RahifM/build
-	wget https://raw.githubusercontent.com/RahifM/repo_update/lineage-18.1-patches/relkey.patch && git apply relkey.patch
-	git commit -a -m "relkey"
+	curl https://github.com/RahifM/build/commit/6af3716772b9e10a682cc9957f4e632c6e8d2ab6.patch | git am -3
+	curl https://github.com/RahifM/build/commit/b8d6293c1a822898d787f4e5aec741be1e58e4ae.patch | git am -3
 	git push -f m HEAD
 	echo "Done updating :)"
 }
