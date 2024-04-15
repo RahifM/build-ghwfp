@@ -1,9 +1,9 @@
 name: build-ghwfp
 
-on: 
-  schedule:
-    - cron: '10 15 * * 1,3,5,0'
-  push:
+#on: 
+#  schedule:
+#    - cron: '10 15 * * 1,3,5,0'
+#  push:
 
 jobs:
   job1:
